@@ -62,7 +62,7 @@ nav .searchbox {
 .seatplan {
     position: relative;
     max-width: 1200px;
-    margin: 100px auto;
+    margin: 100px auto 0;
 }
 
 .seat.special {

@@ -1,0 +1,88 @@
+/* Default Styles */
+body {
+    font-family: sans-serif;
+}
+
+/* Navigation */
+
+nav .searchbox {
+    width: 70px;
+    height: 30px;
+}
+
+.seat-row-right {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.seat {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid grey;
+    width: 100px;
+    height: 100px;
+    box-sizing: border-box;
+    margin: 0 5px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.empty-row-small {
+    margin-bottom: 20px;
+}
+
+.empty-row-large {
+    margin-bottom: 80px;
+}
+
+#RemainingStudentsBox {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px;
+    border: 1px solid red;
+    padding: 10px;
+    min-height: 80px;
+}
+
+#RemainingStudentsBox span {
+    margin: 10px;
+    cursor: pointer;
+}
+
+.seat.present {
+    background: lightgreen;
+}
+
+.space {
+    width: 100px;
+    height: 100px;
+}
+
+.seatplan {
+    position: relative;
+    max-width: 1200px;
+    margin: 100px auto;
+}
+
+.seat.special {
+    position: absolute;
+    border: 1px dashed black;
+    height: 50px;
+}
+
+#StatisticsBox {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content:flex-start; 
+}
+
+#StatisticsBox  p {
+    margin: 10px;
+}
+
+
+
+header {
+    text-align: center;
+}

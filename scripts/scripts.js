@@ -40,9 +40,16 @@ function updateRemainingStudents() {
     
     const collection = document.querySelectorAll(".seat:not(.present):not(.empty)")
     
-    for(var i = 0; i < collection.length; i++) {
-        var seat = collection[i]
-        remainingStudentsBox.innerHTML += "<span>" + seat.textContent + "</span>"
+    console.log(collection.length)
+    
+    if (collection.length > 0) {
+        for(var i = 0; i < collection.length; i++) {
+            var seat = collection[i]
+            remainingStudentsBox.innerHTML += "<span>" + seat.textContent + "</span>"
+        }
+    } else {
+        remainingStudentsBox.classList.toggle("hide")
+        console.log("Hide the box")
     }
     
 }

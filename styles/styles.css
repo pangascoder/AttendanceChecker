@@ -37,12 +37,15 @@ nav .searchbox {
 }
 
 #RemainingStudentsBox {
+    position: fixed;
     display: flex;
     flex-wrap: wrap;
     margin: 10px;
     border: 1px solid red;
     padding: 10px;
-    min-height: 80px;
+    width: 280px;
+    background: red;
+    color: white;
 }
 
 #RemainingStudentsBox span {
@@ -85,4 +88,18 @@ nav .searchbox {
 
 header {
     text-align: center;
+}
+
+.teacher-desk {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    width: 200px;
+    height: 100px;
+}
+
+.hide {
+    display: none !important;
 }

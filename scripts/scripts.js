@@ -38,9 +38,15 @@ function updateRemainingStudents() {
     
     // Search for all the seats and display the assigned student
     
-    const collection = document.querySelectorAll(".seat:not(.present):not(.empty)")
+    let collection = document.querySelectorAll(".seat:not(.present):not(.empty)")
     
-    console.log(collection.length)
+    console.log(collection)
+    
+    console.log("Sorting")
+    
+    console.log(sortData(collection))
+    
+    collection = sortData(collection)
     
     if (collection.length > 0) {
         for(var i = 0; i < collection.length; i++) {
@@ -63,4 +69,20 @@ function updateStatistics() {
     numStudentAbsent = document.querySelectorAll(".seat:not(.present):not(.empty)").length
     numStudentAbsentText.innerHTML = numStudentAbsent
     
+}
+
+function comparator(a, b) {
+    if (a.dataset.lastname < b.dataset.lastname)
+        return -1;
+    if (a.dataset.lastname > b.dataset.lastname)
+        return 1;
+    return 0;
+}
+          
+// Function to sort Data
+function sortData(collection) {
+    var dataArray = Array.from(collection);
+    let sorted = dataArray.sort(comparator);
+    
+    return sorted;
 }

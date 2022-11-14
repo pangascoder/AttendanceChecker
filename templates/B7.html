@@ -1,0 +1,84 @@
+<!-- 
+How to Use
+
+Place the first name of the student inside the <p></p> tags.
+Place their last name as a value for the data-lastname attribute.
+If the seat is empty, add the empty class.
+Add special seats after the Teacher's Desk div, placing the special class and inline styles of the seat's position.
+
+Once all students' information has been added, copy this HTML file and move the copy into the root folder with the class name as the filename.
+Remove the stylesheet and script as indicated.
+
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Attendance Checker</title>
+    <link href="styles/styles.css" rel="stylesheet">
+    <!-- Remove Stylesheet below -->
+    <link href="../styles/styles.css" rel="stylesheet">
+</head>
+<body>
+    <header><h1>11CSC1</h1></header>
+    <main>
+        <div id="StatisticsBox">
+            <p>Present: <span id="NumStudentPresent">15</span></p>
+            <p>Absent: <span id="NumStudentAbsent">3</span></p>
+        </div>
+        <div class="container">
+            <div id="RemainingStudentsBox">
+                <span>Student</span>
+            </div>
+        </div>
+        <div class="container seatplan">
+            <div class="seat-row-right">
+                <div class="seat empty"><p>?</p></div>
+                <div class="seat empty"><p>?</p></div>
+                <div data-lastname="Name" class="seat"><p>Name</p></div>
+                <div data-lastname="Name" class="seat"><p>Name</p></div>
+                <div data-lastname="Name" class="seat"><p>Name</p></div>
+                <div data-lastname="Name" class="seat"><p>Name</p></div>
+                <div data-lastname="Name" class="seat"><p>Name</p></div>
+                <div data-lastname="Name" class="seat"><p>Name</p></div> 
+                
+            </div>
+            <div class="empty-row-large"></div>
+            <div class="seat-row-right">
+                <div data-lastname="Name" class="seat"><p>Name</p></div>
+                <div data-lastname="Name" class="seat"><p>Name</p></div>
+                <div data-lastname="Name" class="seat"><p>Name</p></div>
+                <div data-lastname="Name" class="seat"><p>Name</p></div>
+                <div data-lastname="Name" class="seat"><p>Name</p></div>
+                <div data-lastname="Name" class="seat"><p>Name</p></div>  
+            </div>
+            <div class="empty-row-small"></div>
+            <div class="seat-row-right">
+                <div data-lastname="Name" class="seat"><p>Name</p></div>
+                <div data-lastname="Name" class="seat"><p>Name</p></div>
+                <div data-lastname="Name" class="seat"><p>Name</p></div>
+                <div data-lastname="Name" class="seat"><p>Name</p></div>
+                <div data-lastname="Name" class="seat"><p>Name</p></div> 
+                <div data-lastname="Name" class="seat"><p>Name</p></div>
+            </div>
+            <div class="empty-row-large"></div>
+            <div class="seat-row-right">
+                <div data-lastname="Name" class="seat"><p>Name</p></div>
+                <div data-lastname="Name" class="seat"><p>Name</p></div>
+                <div data-lastname="Name" class="seat"><p>Name</p></div>
+                <div data-lastname="Name" class="seat"><p>Name</p></div>
+                <div data-lastname="Name" class="seat"><p>Name</p></div>
+                <div data-lastname="Name" class="seat"><p>Name</p></div>
+                <div data-lastname="Name" class="seat"><p>Name</p></div>
+                <div data-lastname="Name" class="seat"><p>Name</p></div>
+                <div data-lastname="Name" class="seat"><p>Name</p></div>
+                <div data-lastname="Name" class="seat"><p>Name</p></div>
+            </div>
+            <div class="teacher-desk" style="bottom: 100px; left: -60px; transform: rotate(90deg)">Teacher's Desk</div>
+        </div>
+    </main>
+    <script src="scripts/scripts.js"></script>
+    <!-- Remove script below -->
+    <script src="../scripts/scripts.js"></script>
+</body>
+</html>
